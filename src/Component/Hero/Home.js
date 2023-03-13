@@ -27,7 +27,7 @@ const Home = () => {
                         </span>
                     </h2>
 
-                    <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. Im not adding motion just to spruce things up, but doing it in ways that.</p>
+                    <p>I am a tertiary educated professional with a Masters degree, who is highly motivated to learn and comfortable to continuously learn formally and informally. I enjoy working on dynamic strategic projects with complex problems either independently or part of a collaborative team. My approach to achieving positive outcomes is to be customer and outcomes focused to ensure the project delivers on expectations in a timely fashion.  I have an in-depth understanding of the systems approach to identify, design and deliver solutions to problems and challenges. My long term goal is to become a Senior Software Engineer working on complex strategic projects for organisations.</p>
                     
                     <div className='hero_btn d_flex'>
                         <div className='col_1'>
