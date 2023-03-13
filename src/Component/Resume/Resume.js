@@ -25,6 +25,7 @@ const Resume = () => {
                   if (val.category === "education") {
                     return <Card key={id} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
                   }
+                  return null;
                 })}
 
                 {/*<div className='box btn_shadow'>
@@ -53,6 +54,7 @@ const Resume = () => {
                   if (val.category === "experience") {
                     return <Card key={index} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
                   }
+                  return null;
                 })}
               </div>
             </div>
