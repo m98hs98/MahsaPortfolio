@@ -57,7 +57,9 @@ const Card = (props) => {
                                 LIKE THIS <i className='far fa-thumbs-up'></i>
                             </button>
                             <button className='btn_shadow'>
-                                VIEW PROJECT <i className='fas fa-chevron-right'></i>
+                                <a href={props.address}>
+                                    VIEW PROJECT <i className='fas fa-chevron-right'></i>
+                                </a>
                             </button>
                         </div>
                         <button className='close-modal btn_shadow' onClick={toggleModal}>
