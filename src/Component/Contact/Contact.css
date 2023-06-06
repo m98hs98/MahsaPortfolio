@@ -28,6 +28,31 @@
 .Contact .right {
     padding: 35px;
 }
+
+.Contact .right .input {
+    margin-bottom: 15px;
+}
+
+.Contact .right .input span {
+    font-size: 13px;
+    display: block;
+}
+
+.Contact .right .input[type='text'],
+.Contact .right .input[type='phone'],
+.Contact .right .input[type='email'],
+.Contact .right textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Contact .right textarea {
+    height: 150px;
+}
+
 .Contact .input span {
     font-size: 13px;
 }
@@ -36,6 +61,7 @@
 }
 .Contact .right button {
     width: 100%;
+    margin-top: 15px;
     color: #ff014f;
 }
 .Contact .right button:hover {

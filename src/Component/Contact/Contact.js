@@ -60,7 +60,7 @@ const Contact = () => {
                                 <p>I am available for freelance work. Connect with me via and call in to my account.</p>
                                 <br />
                                 <p>Phone: +61402331984</p>
-                                <p>Email: mahsahaddadi19@gmail.com</p>
+                                <p>Email: mahsadev20@gmail.com</p>
                                 <br />
                                 {/* <span>FIND WITH ME</span>
                                 <div className='button f_flex'>
