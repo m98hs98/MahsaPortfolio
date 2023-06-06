@@ -29,9 +29,6 @@ const Header = () => {
                             <li><a href='#Projects'>Projects</a></li>
                             <li><a href='#Resume'>Resume</a></li>
                             <li><a href='#Contact'>Contact</a></li>
-                            {/* <li>
-                                <button className='home-btn'>BUY NOW</button>
-                            </li> */}
                         </ul>
 
                     <button className='toggle' onClick={() => setMobile(!Mobile)}>

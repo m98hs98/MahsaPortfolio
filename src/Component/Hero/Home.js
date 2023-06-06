@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css";
-// import hero from "../Pic/hero.png"
+import hero2 from "../Pic/hero.png"
 // import HTML5 from "../Pic/HTML5.png"
 // import CSS3 from "../Pic/CSS3.png"
 // import Bootstrap from "../Pic/Bootstrap.png"
@@ -71,11 +71,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* <div className='right'>
-                    <div src={hero} alt='' />
-                </div> */}
+                <div className='right'>
+                    <div src={hero2} alt='' />
+                </div> 
             </div>
-
         </section>
     </>
   );
