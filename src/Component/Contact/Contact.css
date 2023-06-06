@@ -53,12 +53,23 @@
     height: 150px;
 }
 
+.Contact .right .f_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .Contact .input span {
     font-size: 13px;
 }
+
 .Contact input {
     margin-top: 10px;
 }
+
+.Contact input .input.row {
+    flex-basis: 50%;
+}
+
 .Contact .right button {
     width: 100%;
     margin-top: 15px;
@@ -67,9 +78,11 @@
 .Contact .right button:hover {
     color: white;
 }
+
 .Contact .right button i {
     margin-left: 10px;
 }
+
 @media (max-width: 768px) {
     .Contact .d_flex {
       flex-direction: column;
