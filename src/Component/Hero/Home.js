@@ -72,7 +72,7 @@ const Home = () => {
                 </div>
 
                 <div className='right'>
-                    <div src={hero2} alt='' />
+                    <img src={hero2} alt='Hero2' />
                 </div> 
             </div>
         </section>

@@ -3,7 +3,8 @@
 }
 
 .Contact .right {
-    width: 60%;
+    width: 50%;
+    padding: 35px;
 }
 
 .Contact .box {
@@ -23,10 +24,6 @@
 }
 .Contact button {
     margin-right: 20px;
-}
-  
-.Contact .right {
-    padding: 35px;
 }
 
 .Contact .right .input {
