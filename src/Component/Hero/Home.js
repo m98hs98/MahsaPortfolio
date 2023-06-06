@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css";
-import hero2 from "../Pic/hero.png"
+import hero2 from "../Pic/hero2.png"
 // import HTML5 from "../Pic/HTML5.png"
 // import CSS3 from "../Pic/CSS3.png"
 // import Bootstrap from "../Pic/Bootstrap.png"
