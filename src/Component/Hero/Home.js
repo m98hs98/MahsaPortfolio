@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css";
-import hero2 from "../Pic/hero2.png"
+import hero2 from "../Pic/hero2.jpg"
 // import HTML5 from "../Pic/HTML5.png"
 // import CSS3 from "../Pic/CSS3.png"
 // import Bootstrap from "../Pic/Bootstrap.png"
@@ -72,7 +72,9 @@ const Home = () => {
                 </div>
 
                 <div className='right'>
-                    <img src={hero2} alt='Hero2' />
+                    <div className='image-wrapper'>
+                        <img src={hero2} alt='Hero2' className='fade-border'/>
+                    </div>
                 </div> 
             </div>
         </section>

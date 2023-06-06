@@ -48,9 +48,8 @@
     content: "";
     position: absolute;
     top: 16%;
-    /* bottom: 15%; */
     left: 0;
-    height: 100vh;
+    height: calc(100% - 16%);
     width: 5px;
     background: #d9dee2;
     z-index: -2;
@@ -60,9 +59,10 @@
     position: absolute;
     top: 13%;
     left: -8%;
+    bottom: 10%;
     height: 5px;
     width: 50px;
-     background: #d9dee2;
+    background: #d9dee2;
 }
 .Resume .box::before {
     content: "";
