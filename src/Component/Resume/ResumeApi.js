@@ -19,7 +19,7 @@ const ResumeApi = [
       id: 3,
       category: "experience",
       year: "June 2020 - present",
-      title: "Frntend Developer",
+      title: "Frontend Developer",
       desc: "",
       rate: "",
     },

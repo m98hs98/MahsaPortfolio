@@ -1,13 +1,18 @@
 import React from 'react';
 import "./Home.css";
 import hero2 from "../Pic/hero2.jpg"
+import { SiJavascript } from "react-icons/si";
+import { SiMicrosoftazure } from 'react-icons/si';
+import { FaReact } from 'react-icons/fa';
+
+
 // import HTML5 from "../Pic/HTML5.png"
 // import CSS3 from "../Pic/CSS3.png"
 // import Bootstrap from "../Pic/Bootstrap.png"
 // import Git from "../Pic/Git.png"
-import JavaScript from "../Pic/JavaScript.png";
-import React2 from "../Pic/React2.png";
-import Azure from "../Pic/Azure.png";
+// import JavaScript from "../Pic/JavaScript.png";
+//import React2 from "../Pic/React2.png";
+//import Azure from "../Pic/Azure.png";
 
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -54,13 +59,13 @@ const Home = () => {
                                     <img src={Bootstrap} alt='' />
                                 </button>  */}
                                 <button className='btn_shadow'>
-                                    <img src={JavaScript} alt='' />
+                                    <SiJavascript />
                                 </button>
                                 <button className='btn_shadow'>
-                                    <img src={React2} alt='' />
+                                    <FaReact />
                                 </button>
                                 <button className='btn_shadow'>
-                                    <img src={Azure} alt='' />
+                                    <SiMicrosoftazure />
                                 </button>
                                 {/* <button className='btn_shadow'>
                                     <img src={Git} alt='' />
