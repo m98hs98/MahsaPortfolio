@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import contact1 from '../Pic/contact1.png';
+import { useForm, ValidationError } from "@formspree/react";
+
 
 const Contact = () => {
+
+    const [state, handleSubmit] = useForm('xpzgwkrp');
 
     const [data, setData] = useState({
         fullname: '',
         phone: '',
         email:'',
-        subject: '',
         message: '',
     });
+
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>
+    }
 
 
     const InputEvent = (event) => {
@@ -20,21 +27,25 @@ const Contact = () => {
             return {
                 ...preVal,
                 [name]: value,
-
             }
         });
     };
 
-    const formSubmit = (event) => {
-        event.preventDefault();
-        alert(
-            `My name is ${data.fullname}.
-            My phone number is ${data.phone}.
-            My email address is ${data.email}.
-            My Subject on ${data.subject}.
-            Here is my message I want to say: ${data.message}.`
-        );
-    };
+    // const handleSubmit = (event) => {
+    //     event.preventDefault();
+    //     alert(
+    //         `Your name is ${data.fullname}.
+    //         with ${data.phone} phone number,
+    //         and ${data.email} email address,.
+    //         Thanks for putting your message.`
+    //     );
+    //     setData({
+    //         fullname: '',
+    //         phone: '',
+    //         email:'',
+    //         message: '',
+    //     });
+    // };
 
 
   return (
@@ -57,9 +68,9 @@ const Contact = () => {
                                 <br />
                                 <br />
                                 <h1>Mahsa Haddadi</h1>
-                                <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                                <p>
+                                    Feel free to get in touch with me through my contact information to discuss any opportunities you'd like to collaborate on.</p>
                                 <br />
-                                <p>Phone: +61402331984</p>
                                 <p>Email: mahsadev20@gmail.com</p>
                                 <br />
                                 {/* <span>FIND WITH ME</span>
@@ -74,31 +85,31 @@ const Contact = () => {
                     </div>
 
                     <div className='right box_shodow'>
-                        <form onSubmit={formSubmit}>
+                        <form onSubmit={handleSubmit}>
                             <div className='f_flex'>
                                 <div className='input row'>
-                                    <span>YOUR NAME</span>
+                                    <label htmlFor="name">Your Name</label>
                                     <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
+                                    <ValidationError prefix="Name" field="name" errors={state.errors} />
                                 </div>
                                 <div className='input row'>
-                                    <span>PHONE NUMBER</span>
+                                    <label htmlFor="phone">Phone Number</label>
                                     <input type='phone' name='phone' value={data.phone} onChange={InputEvent} />
+                                    <ValidationError prefix="Phone" field="phone" errors={state.errors} />
                                 </div>
                             </div>
                             <div className='input'>
-                                <span>EMAIL</span>
+                                <label htmlFor="email">Email</label>
                                 <input type='email' name='email' value={data.email} onChange={InputEvent} />
+                                <ValidationError prefix="Email" field="email" errors={state.errors} />
                             </div>
                             <div className='input'>
-                                <span>SUBJECT</span>
-                                <input type='text' name='subject' value={data.subject} onChange={InputEvent} />
-                            </div>
-                            <div className='input'>
-                                <span>YOUR MESSAGE</span>
+                                <label htmlFor="message">Your Message</label>
                                 <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
+                                <ValidationError prefix="Message" field="message" errors={state.errors} />
                             </div>
-                            <button className='btn_shadow'>
-                                SEND MESSAGE <i className='fa fa-long-arrow-down'></i>
+                            <button type='submit' className='btn_shadow' disabled={state.submitting} >
+                                Send Message <i className='fa fa-long-arrow-down'></i>
                             </button>
                         </form>
                     </div>

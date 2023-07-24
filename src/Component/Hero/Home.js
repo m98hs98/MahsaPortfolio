@@ -7,15 +7,6 @@ import { FaReact } from 'react-icons/fa';
 
 
 
-// import HTML5 from "../Pic/HTML5.png"
-// import CSS3 from "../Pic/CSS3.png"
-// import Bootstrap from "../Pic/Bootstrap.png"
-// import Git from "../Pic/Git.png"
-// import JavaScript from "../Pic/JavaScript.png";
-//import React2 from "../Pic/React2.png";
-//import Azure from "../Pic/Azure.png";
-
-import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
   return (
@@ -29,7 +20,7 @@ const Home = () => {
                     </h1>
                     <h2>
                         a <span>
-                            <Typewriter words={['Web Developer.']} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                            Web Developer.
                         </span>
                     </h2>
 
@@ -54,7 +45,7 @@ My passion for learning drives me to constantly acquire new skills, making me a 
                         </div>
 
                         <div className='col_1'>
-                            <h4>BEST SKILL ON</h4>
+                            <h4>EXPERT AT</h4>
                             <div className='btn-group'>
                                 <button className='btn_shadow'>
                                     <SiJavascript />

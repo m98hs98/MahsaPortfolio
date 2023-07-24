@@ -3,9 +3,11 @@ header {
   line-height: 80px;
   background-color: #ecf0f3;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  WIDTH: 100%;
+  width: 100%;
   z-index: 100;
   transition: height 0.3s ease-in-out;
+  padding-top: 2px;
+  padding-bottom: 10px;
 }
 header .container {
   display: flex;
@@ -52,7 +54,7 @@ header ul li a:hover {
   display: none;
 }
 .header.active {
-  height: 12vh;
+  height: 11vh;
   position: fixed;
   top: 0;
   z-index: 1000;
