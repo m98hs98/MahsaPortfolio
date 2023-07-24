@@ -4,7 +4,7 @@ import mhero2 from "../Pic/mhero2.jpg"
 import { SiJavascript } from "react-icons/si";
 import { SiMicrosoftazure } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/bi';
+
 
 
 // import HTML5 from "../Pic/HTML5.png"
@@ -38,7 +38,7 @@ My passion for learning drives me to constantly acquire new skills, making me a 
                     
                     <div className='hero_btn d_flex'>
                         <div className='col_1'>
-                            <h4>FIND WITH ME</h4>
+                            <h4>FIND ME</h4>
                             <div className='button'>
                                 <a href='https://www.linkedin.com/in/mahsa-haddadi/'>
                                     <button className='btn_shadow'>
@@ -65,9 +65,6 @@ My passion for learning drives me to constantly acquire new skills, making me a 
                                 <button className='btn_shadow'>
                                     <SiMicrosoftazure />
                                 </button>
-                                {/* <button className='btn_shadow'>
-                                    <img src={Git} alt='' />
-                                </button> */}
                             </div>
                             
                         </div>
