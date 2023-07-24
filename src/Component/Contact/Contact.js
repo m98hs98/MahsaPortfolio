@@ -16,7 +16,13 @@ const Contact = () => {
     });
 
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>
+        return (
+            <div className='Contact d-flex'>
+                <div className='box1 box-shadow'>
+                    <p>Thanks for joining!</p>
+                </div>
+            </div>
+        );
     }
 
 

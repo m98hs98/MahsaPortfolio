@@ -11,6 +11,16 @@
     padding: 30px;
 }
 
+.Contact .box1 {
+    display: flex;
+    margin-top: 100px;
+    padding-top: 70px;
+    margin-left: 450px;
+    font-weight: 800;
+    font-size: larger;
+    padding: 30px;
+}
+
 .Contact .details h1 {
     margin: 20px 0 20px 0;
     font-size: 35px;
