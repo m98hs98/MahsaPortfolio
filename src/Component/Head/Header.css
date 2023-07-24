@@ -1,138 +1,115 @@
 header {
-    height: 80px;
-    line-height: 80px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    transition: height 0.3s ease-in-out;
+  height: 95px;
+  line-height: 80px;
+  background-color: #ecf0f3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  WIDTH: 100%;
+  z-index: 100;
+  transition: height 0.3s ease-in-out;
+}
+header .container {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+header .logo img {
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+header ul li {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+header ul li a {
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: #ff014f;
+}
+.home-btn {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  height: fit-content;
+  color: #ff014f;
+}
+.home-btn {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.home-btn:hover {
+  background: #ff014f;
+  color: white;
+}
+.open {
+  display: none;
+}
+.header.active {
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ecf0f3;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  header ul {
+    padding-top: 30px;
   }
-  
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header .logo img {
-    border-radius: 50%;
-  }
-  
-  header .link {
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
   }
-  
-  header .link li {
-    display: inline-block;
-    margin-left: 30px;
-  }
-  
-  header .link li:first-child {
-    margin-left: 0;
-  }
-  
-  header .link li a {
-    font-size: 16px;
-    font-weight: 600;
+  header ul li {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
     text-transform: uppercase;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    line-height: 70px;
   }
-  
-  header .link li a:hover {
-    color: #ff014f;
-  }
-  
-  header .toggle {
+  header .link {
     display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #333;
-    transition: color 0.3s ease-in-out;
   }
-  
-  header .toggle:hover {
+  .close,
+  .open {
+    position: absolute;
+    top: 35px;
+    right: 20px;
     color: #ff014f;
+    display: block;
+    font-size: 25px;
+    z-index: 999;
   }
-  
-  .header.active {
+  .close {
+    right: 45%;
+  }
+  .close.home-btn {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    color: #ff014f;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
     height: 60px;
+    line-height: 60px;
   }
-  
-  @media (max-width: 768px) {
-    header .logo img {
-      max-width: 50px;
-    }
-  
-    header .link {
-      display: none;
-    }
-  
-    header .toggle {
-      display: block;
-    }
-  
-    header .nav-links-mobile {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color: #fff;
-      z-index: 99;
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-    }
-  
-    header .nav-links-mobile.active {
-      transform: translateX(0);
-    }
-  
-    header .nav-links-mobile li {
-      display: block;
-      text-align: center;
-      margin-top: 30px;
-    }
-  
-    header .nav-links-mobile li:first-child {
-      margin-top: 0;
-    }
-  
-    header .nav-links-mobile li a {
-      font-size: 20px;
-      font-weight: 600;
-      color: #333;
-      text-decoration: none;
-    }
-  
-    header .nav-links-mobile li a:hover {
-      color: #ff014f;
-    }
-  
-    header .open {
-      display: block;
-    }
-  
-    header .close {
-      display: block;
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      font-size: 24px;
-      color: #333;
-      transition: color 0.3s ease-in-out;
-    }
-  
-    header .close:hover {
-      color: #ff014f;
-    }
+  .header.active {
+    height: 10vh;
   }
-  
+}  
