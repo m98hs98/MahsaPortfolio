@@ -72,13 +72,8 @@ const Contact = () => {
                                     Feel free to get in touch with me through my contact information to discuss any opportunities you'd like to collaborate on.</p>
                                 <br />
                                 <p>Email: mahsadev20@gmail.com</p>
+                                <p>Phone Number: 0402331984</p>
                                 <br />
-                                {/* <span>FIND WITH ME</span>
-                                <div className='button f_flex'>
-                                    <button className='btn_shadow'>
-                                        <i className='fab fa-facebook-f'></i>
-                                    </button>
-                                </div> */}
                             </div>
                             
                         </div>
@@ -92,11 +87,11 @@ const Contact = () => {
                                     <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
                                     <ValidationError prefix="Name" field="name" errors={state.errors} />
                                 </div>
-                                <div className='input row'>
+                                {/* <div className='input row'>
                                     <label htmlFor="phone">Phone Number</label>
                                     <input type='phone' name='phone' value={data.phone} onChange={InputEvent} />
                                     <ValidationError prefix="Phone" field="phone" errors={state.errors} />
-                                </div>
+                                </div> */}
                             </div>
                             <div className='input'>
                                 <label htmlFor="email">Email</label>

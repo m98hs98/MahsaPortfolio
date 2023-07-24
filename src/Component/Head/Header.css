@@ -1,6 +1,6 @@
 header {
   height: 95px;
-  line-height: 80px;
+  line-height: 30px;
   background-color: #ecf0f3;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -11,7 +11,7 @@ header {
 }
 header .container {
   display: flex;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 15px;
 }
 header .logo img {
@@ -22,6 +22,7 @@ header .logo img {
 header ul li {
   margin-left: 30px;
   margin-bottom: 50px;
+  margin-top: 20px;
   display: inline-block;
 }
 header ul li a {
