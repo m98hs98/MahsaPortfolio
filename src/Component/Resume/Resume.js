@@ -2,9 +2,10 @@ import React from "react";
 import "./Resume.css";
 
 
+
 const Resume = () => {
   
-  const resumeLink = "";
+  const resumeLink = "https://github.com/m98hs98/certs/blob/main/Mahsa%20Resume.pdf";
 
   const handleShowResume = () => {
     window.open(resumeLink, "_blank");
@@ -15,7 +16,6 @@ const Resume = () => {
       <section className="Resume" id="resume">
         <div className="container top">
           <div className="heading text-center">
-            <h4>WORK EXPERIENCE</h4>
             <h1>My Resume</h1>
           </div>
         </div>
