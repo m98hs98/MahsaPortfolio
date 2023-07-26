@@ -19,7 +19,7 @@ const Contact = () => {
         return (
             <div className='Contact d-flex'>
                 <div className='box1 box-shadow'>
-                    <p>Thanks for joining!</p>
+                    <p>Thanks for contacting me!</p>
                 </div>
             </div>
         );

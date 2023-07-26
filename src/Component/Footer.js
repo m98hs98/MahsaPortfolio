@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className='img'>
                     <img src={logo1} alt='' />
                 </div>
-                <p>© 2022. all right reserved by GorkCoder-Themes.</p>
+                <p>Mahsa Haddadi © 2023</p>
             </div>
         </footer>
     </>
