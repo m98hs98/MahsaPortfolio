@@ -1,13 +1,14 @@
 import React from 'react';
-import logo1 from "./Pic/f_logo.png";
+import "./Footer.css"
+import logo1 from "../Pic/f_logo.png";
 
 const Footer = () => {
   return (
     <>
         <footer>
             <div className='container text-center top'>
-                <div className='img'>
-                    <img src={logo1} alt='' />
+                <div className='logo'>
+                    <img src={logo1} alt='Logo' />
                 </div>
                 <p>Mahsa Haddadi © 2023</p>
             </div>

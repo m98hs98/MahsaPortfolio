@@ -6,14 +6,13 @@ import Home from './Component/Hero/Home';
 import Portfolio from './Component/Portfolio/Portfolio';
 import Resume from './Component/Resume/Resume';
 import Contact from './Component/Contact/Contact';
-import Footer from './Component/Footer';
+import Footer from './Component/Footer/Footer';
 
 const App = () => {
   return (
     <>
       <Header />
       <Home />
-      {/* <Features />  */}
       <Portfolio />
       <Resume />
       <Contact />
