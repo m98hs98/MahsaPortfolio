@@ -15,7 +15,7 @@ const Portfolio_data = [
     title: "An app for bank accounting",
     image: "./image/Bankist.png",
     address: "https://m98hs98.github.io/Bankist/",
-    description: "The provided code is a Bank Application with features for user banking operations. It handles logging in, money transfers, loan requests, account closure, and movement sorting. The JavaScript code manages user interactions, data manipulation, and UI updates. It includes functions for formatting, displaying movements, calculating balances, and creating usernames. The code represents a basic banking system with account management and transaction capabilities."
+    description: "The provided code is a Bank Application with features for user banking operations. It handles logging in, money transfers, loan requests, account closure, and movement sorting. The JavaScript code manages user interactions, data manipulation, and UI updates. It includes functions for formatting, displaying movements, calculating balances, and creating usernames. The code represents a basic banking system with account management and transaction capabilities. (User: js Password: 1111)"
   },
   {
     id: 3,
