@@ -35,6 +35,7 @@ const Card = (props) => {
                     <i className='fas fa-arrow-right'></i>
                 </a> 
             </div>
+
         </div>
 
 
@@ -57,7 +58,7 @@ const Card = (props) => {
                                 LIKE THIS <i className='far fa-thumbs-up'></i>
                             </button>
                             <button className='btn_shadow'>
-                                <a href={props.address}>
+                                <a href={props.address} target='_blank' rel='noopener noreferrer'>
                                     VIEW PROJECT <i className='fas fa-chevron-right'></i>
                                 </a>
                             </button>

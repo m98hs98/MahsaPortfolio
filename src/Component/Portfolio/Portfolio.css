@@ -59,6 +59,10 @@
 .portfolio label i {
   margin-right: 10px;
 }
+.displayed-url {
+  color: red;
+  font-size: 12px;
+}
 
   /*------------popup--------*/
 body.active-modal {
