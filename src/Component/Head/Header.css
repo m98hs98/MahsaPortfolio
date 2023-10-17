@@ -1,76 +1,131 @@
-header {
+.header {
   height: 95px;
   line-height: 30px;
-  background-color: #ecf0f3;
+  background-color: var(--header-footer-bg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   transition: height 0.3s ease-in-out;
-  padding-top: 2px;
-  padding-bottom: 10px;
+  padding: 2px 0 10px;
 }
-header .container {
+
+/* - - - - Container Styles - - - - */
+.header-container {
   display: flex;
-  padding-top: 5px;
-  padding-bottom: 15px;
+  padding: 5px 0 15px;
 }
-header .logo img {
+
+/* - - - - Logo Styles - - - - */
+.header-logo img {
   border-radius: 50%;
   margin-bottom: 25px;
 }
 
-header ul li {
-  margin-left: 30px;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  display: inline-block;
+/* - - - - Navigation Styles - - - - */
+.navlink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-header ul li a {
+
+.navlink ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlink ul li {
+  margin-right: 10px;
+}
+
+.navlink ul li:last-child {
+  margin-right: 0;
+}
+
+.navlink ul li a {
+  padding: 10px 10px;
   transition: 0.3s ease-in-out;
   font-size: 14px;
-  font-weight: 600;
+  font-weight:600;
   letter-spacing: 1px;
   text-decoration: none;
+  color: var(--link-color);
 }
-header ul li a:hover {
-  color: #ff014f;
+
+.navlink ul li a:hover {
+  color: var(--hover-color);
 }
+
+[data-background="toggle"] {
+  cursor: pointer;
+}
+
+[data-background="toggle"]:hover {
+  color: var(--hover-color);
+}
+
+/* - - - - Button Styles - - - - */
 .home-btn {
-  padding: 18px 25px;
+  padding: 9px 10px;
   border-radius: 6px;
   transition: 0.3s all ease;
   cursor: pointer;
   height: fit-content;
-  color: #ff014f;
-}
-.home-btn {
+  color: var(--hover-color);
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
+
 .home-btn:hover {
-  background: #ff014f;
+  background: var(--hover-color);
   color: white;
 }
-.open {
+
+/* - - - - Toggle Button Styles - - - - */
+.toggle {
+  display: none;
+  margin-left: 20px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-btn {
   display: none;
 }
-.header.active {
+
+.active-header {
   height: 11vh;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
-  background-color: #ecf0f3;
+  background-color: var(--background-color);
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
+
+/* - - - - Responsive Styles - - - - */
 @media (max-width: 768px) {
-  header ul {
+  .header-nav {
     padding-top: 30px;
   }
+
+  .navlink ul {
+    display: none;
+  }
+
+  .navlink .nav-links-mobile {
+    display: flex !important;
+    background-color: #ecf0f3;
+  }
+
   .nav-links-mobile {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
     list-style: none;
     box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     left: 0;
@@ -79,40 +134,63 @@ header ul li a:hover {
     width: 60%;
     height: 100vh;
     background-color: white;
-    z-index: 888;
+    z-index: 15;
   }
-  header ul li {
+
+  .header-nav li {
     width: 100%;
     transition: all 0.5s ease-in-out;
     text-transform: uppercase;
     line-height: 70px;
   }
-  header .link {
-    display: none;
+
+  [data-theme='dark'] .navlink ul li a {
+    color: #000;
   }
-  .close,
-  .open {
+
+  [data-theme='dark'] .navlink .nav-links-mobile {
+    background-color: #444;
+  }
+
+  /*.nav-link {
+    display: none;
+  }*/
+
+  .toggle {
+    display: block;
+  }
+
+  .toggle-close, .toggle-open {
     position: absolute;
     top: 35px;
     right: 20px;
-    color: #ff014f;
+    color: var(--hover-color);
     display: block;
     font-size: 25px;
-    z-index: 999;
+    z-index: 20;
   }
-  .close {
+
+  .toggle-close {
     right: 45%;
   }
-  .close.home-btn {
+
+  .toggle-close.home-btn {
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    color: #ff014f;
+    color: var(--hover-color);
     border-radius: 50%;
     padding: 0;
     width: 60px;
     height: 60px;
     line-height: 60px;
   }
-  .header.active {
+
+  .active-header {
     height: 10vh;
   }
-}  
+} 
+
+@media (min-width: 769px) {
+  .navlink ul {
+      display: flex; /* This will display the nav links for screens > 768px wide */
+  }
+}

@@ -1,17 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Header.css";
 import logo from "../Pic/logo.png";
 
 const Header = () => {
 
-        // when scroll header at top 
+
+    // Dark Mode State
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedMode = localStorage.getItem('darkMode');
+        return savedMode ? JSON.parse(savedMode) : false;
+    });
+
+
+    useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+
+        if (darkMode) {
+            document.body.setAttribute('data-theme', 'dark');
+        } else {
+            document.body.removeAttribute('data-theme');
+        }
+    }, [darkMode]);
+
+    const toggleDarkMode = (e) => {
+        e.preventDefault();
+        setDarkMode(prev => !prev);
+        console.log(darkMode);
+    };
+
+
+    // when scroll header at top 
     window.addEventListener("scroll", function() {
         const header = document.querySelector(".header");
         header.classList.toggle("active", window.scrollY > 100);
     });
 
 
-    //toggle menu
+    //Toggle menu
     const [Mobile, setMobile] = useState(false);
 
   return (
@@ -28,6 +53,9 @@ const Header = () => {
                             <li><a href='#portfolio'>Projects</a></li>
                             <li><a href='#resume'>Resume</a></li>
                             <li><a href='#contact'>Contact</a></li>
+                            <li onClick={toggleDarkMode}>
+                                <a href='#' className='mode-toggle'>{darkMode ? 'Light Mode' : 'Dark Mode'}</a> 
+                            </li>
                         </ul>
 
                     <button className='toggle' onClick={() => setMobile(!Mobile)}>

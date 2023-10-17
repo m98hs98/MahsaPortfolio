@@ -1,6 +1,7 @@
 Footer {
     margin: 3% 0;
-    background-color: #f2f2f2;
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
     padding: 20px 0;
 }
 
