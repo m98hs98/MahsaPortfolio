@@ -16,9 +16,9 @@ const Header = () => {
         localStorage.setItem('darkMode', JSON.stringify(darkMode));
 
         if (darkMode) {
-            document.body.setAttribute('data-theme', 'dark');
+            document.documentElement.setAttribute('data-theme', 'dark');
         } else {
-            document.body.removeAttribute('data-theme');
+            document.documentElement.removeAttribute('data-theme');
         }
     }, [darkMode]);
 

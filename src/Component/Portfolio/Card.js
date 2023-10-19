@@ -14,6 +14,8 @@ const Card = (props) => {
         document.body.classList.remove("active-modal");
     };
 
+    console.log(document.documentElement.getAttribute('data-theme'))
+
   return (
     <>
         <div className='box btn_shadow'>

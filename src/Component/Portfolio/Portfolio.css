@@ -2,6 +2,7 @@
   position: relative;
 }
 .portfolio .box {
+  background-color: var(--card-background, #2a2a2a);
   border-radius: 10px;
   position: relative;
 }
@@ -104,6 +105,7 @@ body.active-modal {
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
   padding: 50px;
   border-radius: 10px;
+  background-color: var(--modal-background, #f0f3f5);
 }
   
 .modal-text {

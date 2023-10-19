@@ -18,21 +18,47 @@
 
   --header-footer-bg: #2a2a2a;
   --header-footer-text: #eee;
+  
 }
 
-/*[data-theme='dark'] {
-  background-color: #333;
-  color: #eee;
+[data-theme='dark'] h1 {
+  color: #D0D4D7 !important;
 }
 
-.dark {
-  --background-color: #333;
-  --text-color: #fff;
-  --link-color: #eee;
+[data-theme='dark'] .hero_btn.d_flex h4 {
+  color: #B4B8BB;
+}
 
-  --header-footer-bg: #2a2a2a;
-  --header-footer-text: #eee;
-}*/
+[data-theme='dark'] .btn_shadow {
+  background: #D0D4D7 !important;
+  /*color: #fff;*/
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+
+[data-theme='dark'] .modal-content {
+  --modal-background: #2a2a2a;
+  color: #ebebeb;
+}
+
+[data-theme='dark'] .modal-text p {
+  color: #B4B8BB;
+}
+
+[data-theme='dark'] .Contact .left .box {
+  background-color: #D0D4D7;
+}
+
+[data-theme='dark'] .left .box h1 {
+  color: #777777 !important;
+}
+
+[data-theme='dark'] .right.box_shodow label {
+  color: #777777;
+}
+
+[data-theme='dark'] .container.text-center p {
+  color: #B4B8BB;
+}
 
 * {
   padding: 0;
