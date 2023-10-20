@@ -54,7 +54,7 @@ const Header = () => {
                             <li><a href='#resume'>Resume</a></li>
                             <li><a href='#contact'>Contact</a></li>
                             <li onClick={toggleDarkMode}>
-                                <a href='#' className='mode-toggle'>{darkMode ? 'Light Mode' : 'Dark Mode'}</a> 
+                                <button className='mode-toggle'>{darkMode ? 'Light Mode' : 'Dark Mode'}</button> 
                             </li>
                         </ul>
 

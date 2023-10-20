@@ -37,6 +37,8 @@
 
 .navlink ul li {
   margin-right: 10px;
+  align-items: center;
+  display: flex;
 }
 
 .navlink ul li:last-child {
@@ -53,9 +55,42 @@
   color: var(--link-color);
 }
 
+.navlink ul li button {
+  padding: 10px 10px;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--link-color);  
+}
+
+.navlink ul li button:focus {
+  outline: none;  
+}
+
+
+[data-theme='dark'] .navlink ul li button {
+  color: #000;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .navlink ul li a:hover {
   color: var(--hover-color);
 }
+
+.navlink ul li button:hover {
+  color: var(--hover-color);
+}
+
 
 [data-background="toggle"] {
   cursor: pointer;
@@ -144,8 +179,14 @@
     line-height: 70px;
   }
 
-  [data-theme='dark'] .navlink ul li a {
+  [data-theme='dark'] .navlink ul li button {
     color: #000;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
   }
 
   [data-theme='dark'] .navlink .nav-links-mobile {
