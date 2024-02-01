@@ -141,7 +141,10 @@ body.active-modal {
 .modal-text button.close-modal i {
   margin: 0;
 }
-  /*------------popup--------*/
+
+
+
+  
 @media (max-width: 768px) {
   .modal,
   .overlay {
@@ -157,5 +160,10 @@ body.active-modal {
   .modal .right,
   .modal .left {
     padding: 0;
+  }
+  .portfolio .img {
+    height: 180px;
+    margin-bottom: 5px;
+    padding-bottom: 5px !important;
   }
 }
