@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Header.css";
-import logo from "../Pic/logo.png";
+import logo from "../Pic/Mlogo.jpeg";
 
 const Header = () => {
 

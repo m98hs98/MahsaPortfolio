@@ -76,8 +76,8 @@ const Contact = () => {
                                 <p>
                                     Feel free to get in touch with me through my contact information to discuss any opportunities you'd like to collaborate on.</p>
                                 <br />
-                                <p>Email: mahsadev20@gmail.com</p>
-                                <p>Phone Number: 0402331984</p>
+                                {/* <p>Email: mahsadev20@gmail.com</p>
+                                <p>Phone Number: 0402331984</p> */}
                                 <br />
                             </div>
                             
